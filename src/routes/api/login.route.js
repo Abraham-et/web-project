@@ -5,6 +5,6 @@ var loginController = require('../../controllers/login.controller.js')
 
 
 
-router.get('/login', loginController.login);
+router.post('/login', loginController.login);
 
 module.exports = router;

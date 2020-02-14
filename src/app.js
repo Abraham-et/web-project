@@ -16,17 +16,7 @@ var router = require('./routes');
 
 var app = express();
 
-const jwtOptions = {
-  secret: process.env.JWTSECRET,
-  expiresIn: "1h"
-};
 
-const cookieOptions = {
-  expires: new Date(Date.now() + 1000 * 60 * 60), // 1 hour
-  secure: true,
-  httpOnly: true,
-  sameSite: true
-};
 
 
 
